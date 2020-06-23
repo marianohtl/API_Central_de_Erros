@@ -1,0 +1,8 @@
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.deps.json
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.dll
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.pdb
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.csprojAssemblyReference.cache
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.AssemblyInfo.cs
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.dll
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.pdb

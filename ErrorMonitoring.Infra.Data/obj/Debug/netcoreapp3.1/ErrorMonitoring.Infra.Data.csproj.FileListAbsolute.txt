@@ -1,0 +1,10 @@
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.deps.json
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csprojAssemblyReference.cache
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.AssemblyInfo.cs
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.runtimeconfig.json
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.runtimeconfig.dev.json
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb

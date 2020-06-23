@@ -1,0 +1,8 @@
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Dominio\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.deps.json
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Dominio\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.dll
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Dominio\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.pdb
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.csprojAssemblyReference.cache
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.AssemblyInfoInputs.cache
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.AssemblyInfo.cs
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.dll
+C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.pdb
