@@ -16,6 +16,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorMonitoring.Dominio", "ErrorMonitoring.Dominio\ErrorMonitoring.Dominio.csproj", "{B8161B50-33BD-45C1-B9F9-CFB14155131E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorMonitoring.Infra.Data", "ErrorMonitoring.Infra.Data\ErrorMonitoring.Infra.Data.csproj", "{8CA47236-34B4-453D-B8FF-E00D7E26D5D0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B8161B50-33BD-45C1-B9F9-CFB14155131E} = {B8161B50-33BD-45C1-B9F9-CFB14155131E}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorMonitoring.Infra.CrossCutting", "ErrorMonitoring.Infra.CrossCutting\ErrorMonitoring.Infra.CrossCutting.csproj", "{6AE9E621-7AED-4059-AA52-9F51ECCF713B}"
 EndProject

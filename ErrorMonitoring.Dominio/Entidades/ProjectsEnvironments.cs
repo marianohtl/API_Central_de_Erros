@@ -1,9 +1,10 @@
-﻿using System;
+﻿using ErrorMonitoring.Dominio.Entidades;
+using System;
 using System.Collections.Generic;
 
 namespace ErrorMonitoring.Infra.Data.Domains
 {
-    public partial class ProjectsEnvironments
+    public class ProjectsEnvironments
     {
         public int Id { get; set; }
         public int Project { get; set; }

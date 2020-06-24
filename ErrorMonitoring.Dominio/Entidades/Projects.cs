@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ErrorMonitoring.Infra.Data.Domains
 {
-    public partial class Projects
+    public class Projects
     {
         public Projects()
         {

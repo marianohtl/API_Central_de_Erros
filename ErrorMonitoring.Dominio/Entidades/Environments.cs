@@ -1,13 +1,16 @@
-﻿using System;
+﻿using ErrorMonitoring.Infra.Data.Domains;
+using System;
 using System.Collections.Generic;
 
 namespace ErrorMonitoring.Dominio.Entidades
 {
-    public partial class Environments
+    public class Environments
     {
         public Environments()
         {
             ProjectsEnvironments = new HashSet<ProjectsEnvironments>();
+
+        
         }
 
         public int Id { get; set; }
