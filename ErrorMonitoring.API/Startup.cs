@@ -28,15 +28,35 @@ namespace ErrorMonitoring.API
             services.AddScoped<IEventsService, EventsService>();
             services.AddScoped<IEventsRepository, EventsRepository>();
             services.AddAutoMapper(typeof(Startup));
-        }
+
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1",
+                    new Microsoft.OpenApi.Models.OpenApiInfo
+                    {
+                        Title = "ErrorMonitoring",
+                        Version = "v1",
+                        Description = "WebApi Error Monitoring"
+                    });
+
+                });
+
+            }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+            public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("v1/swagger.json", "v1");
+            });
 
             app.UseRouting();
 
