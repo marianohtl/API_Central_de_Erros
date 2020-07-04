@@ -1,7 +1,6 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using ErrorMonitoring.Infra.Data.Domains;
 using ErrorMonitoring.Dominio.Entidades;
 
 namespace ErrorMonitoring.Infra.Data.Contexts

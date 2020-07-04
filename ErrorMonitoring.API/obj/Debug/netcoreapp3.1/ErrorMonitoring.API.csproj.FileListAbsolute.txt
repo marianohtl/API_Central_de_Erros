@@ -71,10 +71,14 @@ C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\bin\D
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.csprojAssemblyReference.cache
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\staticwebassets\ErrorMonitoring.API.StaticWebAssets.Manifest.cache
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\staticwebassets\ErrorMonitoring.API.StaticWebAssets.xml
-C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.AssemblyInfoInputs.cache
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.AssemblyInfo.cs
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.RazorTargetAssemblyInfo.cache
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.csproj.CopyComplete
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.dll
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.pdb
+C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.genruntimeconfig.cache
+C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.csproj.CoreCompileInputs.cache
+C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.API\obj\Debug\netcoreapp3.1\ErrorMonitoring.API.MvcApplicationPartsAssemblyInfo.cache

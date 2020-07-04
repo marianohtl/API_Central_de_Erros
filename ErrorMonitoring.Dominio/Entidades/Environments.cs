@@ -1,6 +1,4 @@
-﻿using ErrorMonitoring.Infra.Data.Domains;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
 namespace ErrorMonitoring.Dominio.Entidades
 {

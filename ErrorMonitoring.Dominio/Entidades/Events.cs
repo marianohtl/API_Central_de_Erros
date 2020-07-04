@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ErrorMonitoring.Infra.Data.Domains
+namespace ErrorMonitoring.Dominio.Entidades
 {
     public class Events
     {

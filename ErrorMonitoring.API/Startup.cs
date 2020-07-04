@@ -1,14 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using AutoMapper;
+using ErrorMonitoring.Dominio.Interfaces;
+using ErrorMonitoring.Dominio.Services;
+using ErrorMonitoring.Infra.Data.Contexts;
+using ErrorMonitoring.Infra.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 
 namespace ErrorMonitoring.API
 {
@@ -25,6 +24,10 @@ namespace ErrorMonitoring.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ApiContext>();
+            services.AddScoped<IEventsService, EventsService>();
+            services.AddScoped<IEventsRepository, EventsRepository>();
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

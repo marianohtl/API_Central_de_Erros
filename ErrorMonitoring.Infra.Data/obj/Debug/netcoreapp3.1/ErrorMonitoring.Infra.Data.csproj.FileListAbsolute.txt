@@ -21,3 +21,5 @@ C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Dat
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csproj.CopyComplete
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
+C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.genruntimeconfig.cache
