@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qPI61cauZ8kWPTniq2/JA90dNxwZNmjAPGM3+HTBajuXHA/Iww++ezWgL3Exl+zyRNF1w9CiM85nqa/JFeVnMQ==",
+  "dgSpecHash": "2b0V0VAxDjbx3Sq6/hsx+IJv1I70UpXVEAvZuGbqTJrEdwofeR1jdX5kwp9oISG2MjKeVcYOPv78+9o/W1udpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj",
+  "projectFilePath": "D:\\BRUNA\\PROJETO FINAL- Central de erros - Codenation\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

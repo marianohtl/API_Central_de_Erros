@@ -23,3 +23,18 @@ C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Dat
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csproj.CoreCompileInputs.cache
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.genruntimeconfig.cache
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.deps.json
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.runtimeconfig.json
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.runtimeconfig.dev.json
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.dll
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.pdb
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csprojAssemblyReference.cache
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csproj.CoreCompileInputs.cache
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.AssemblyInfoInputs.cache
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.AssemblyInfo.cs
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csproj.CopyComplete
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
+D:\BRUNA\PROJETO FINAL- Central de erros - Codenation\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.genruntimeconfig.cache
