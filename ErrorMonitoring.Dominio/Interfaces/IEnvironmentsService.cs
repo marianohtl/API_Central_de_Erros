@@ -12,5 +12,6 @@ namespace ErrorMonitoring.Dominio.Interfaces
         Environments Save(Environments environment);
         Environments Update(Environments environment);
         bool Delete (int id);
+
     }
 }

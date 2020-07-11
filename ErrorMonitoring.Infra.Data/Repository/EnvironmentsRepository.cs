@@ -20,7 +20,6 @@ namespace ErrorMonitoring.Infra.Data.Repository
         {
             return _apiContext.Environments;
         }
-
         public Environments GetById(int id)
         {
             return _apiContext.Environments.Where(x => x.Id == id).FirstOrDefault();

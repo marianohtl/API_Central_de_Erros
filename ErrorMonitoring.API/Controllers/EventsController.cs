@@ -11,8 +11,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ErrorMonitoring.API.Controllers
 {
-    
-    
     [Route("api/[controller]")]
     [ApiController]
     

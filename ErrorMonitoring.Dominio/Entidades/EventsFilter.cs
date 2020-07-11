@@ -20,6 +20,5 @@ namespace ErrorMonitoring.Dominio.Entidades
 
         public bool IsOrderAsc() => OrderByDirection?.Trim()?.ToLower() == "asc";
         public bool IsOrderDesc() => OrderByDirection?.Trim()?.ToLower() == "desc";
-        
     }
 }

@@ -12,6 +12,7 @@ namespace ErrorMonitoring.Infra.Data.Contexts
         {
         }
 
+
         public ApiContext(DbContextOptions<ApiContext> options)
             : base(options)
         {

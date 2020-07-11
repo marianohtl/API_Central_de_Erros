@@ -23,6 +23,7 @@ namespace ErrorMonitoring.API.Controllers
             _environmentsService = environmentsService;
             _mapper = mapper;
         }
+
         // GET: api/Environments
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]

@@ -64,7 +64,6 @@ namespace ErrorMonitoring.API.Controllers
                 return NoContent();
             }
         }
-
         // POST: api/ProjectsEnvironments
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]

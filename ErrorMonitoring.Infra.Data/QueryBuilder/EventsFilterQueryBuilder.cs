@@ -33,6 +33,7 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
             }
         }
 
+
         //private void WhereByEnvironment()
         //{
         //    if (!string.IsNullOrWhiteSpace(_filter.Environment))

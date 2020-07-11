@@ -16,5 +16,6 @@ namespace ErrorMonitoring.Dominio.Interfaces
         Events Update(Events events);
 
         bool Delete(int Id);
+
     }
 }

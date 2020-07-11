@@ -21,7 +21,6 @@ namespace ErrorMonitoring.Infra.Data.Repository
         {
             return _apiContext.ProjectsEnvironments;
         }
-
         public ProjectsEnvironments GetById(int id)
         {
             return _apiContext.ProjectsEnvironments.Where(x => x.Id == id).FirstOrDefault();

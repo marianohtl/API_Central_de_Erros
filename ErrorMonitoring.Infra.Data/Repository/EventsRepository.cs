@@ -24,8 +24,6 @@ namespace ErrorMonitoring.Infra.Data.Repository
             return new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter).Build();   
         }
 
-        
-
         public Events GetById(int Id)
         {
             return context.Events.Where(x => x.Id == Id).FirstOrDefault();

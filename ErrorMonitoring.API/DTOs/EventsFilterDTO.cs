@@ -7,6 +7,7 @@ namespace ErrorMonitoring.API.DTOs
 {
     public class EventsFilterDTO
     {
+
         public string Environment { get; set; }
         
         public string Level { get; set; }

@@ -15,7 +15,6 @@ namespace ErrorMonitoring.Dominio.Services
         {
             this._projectsEnvironmentsRepository = projectsEnvironmentsRepository;
         }
-
         public IList<ProjectsEnvironments> ProjectsEnvironments()
         {
             try

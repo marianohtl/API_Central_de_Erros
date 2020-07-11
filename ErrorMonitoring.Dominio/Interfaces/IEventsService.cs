@@ -8,7 +8,7 @@ namespace ErrorMonitoring.Dominio.Interfaces
     public interface IEventsService
     { 
 
-        IList<Events> Events(EventsFilter eventsFiltro);
+        IList<Events> Events(EventsFilter eventsFilter);
 
         Events EventById(int ID);
 
@@ -17,6 +17,7 @@ namespace ErrorMonitoring.Dominio.Interfaces
         Events Atualizar(Events events);
       
         bool Deletar(int ID);
+
 
     }
 }

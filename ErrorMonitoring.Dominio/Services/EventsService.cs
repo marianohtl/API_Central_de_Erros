@@ -27,7 +27,6 @@ namespace ErrorMonitoring.Dominio.Services
                 return new List<Events>();
             }
         }
-
         public Events EventById(int ID)
         {
             try
