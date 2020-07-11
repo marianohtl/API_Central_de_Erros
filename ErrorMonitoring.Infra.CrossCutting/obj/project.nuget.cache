@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qPI61cauZ8kWPTniq2/JA90dNxwZNmjAPGM3+HTBajuXHA/Iww++ezWgL3Exl+zyRNF1w9CiM85nqa/JFeVnMQ==",
+  "dgSpecHash": "SjB0tVTzgvIBcyQf8uofR7mzaPQh+V9uRM/OTeh4a1PYr8TRCMpPPov2HpzVjDwhEw8sMPwKDBKBFOG8c/R0QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Jubs\\Desktop\\acelera\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Jubs\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
   "logs": []
 }
