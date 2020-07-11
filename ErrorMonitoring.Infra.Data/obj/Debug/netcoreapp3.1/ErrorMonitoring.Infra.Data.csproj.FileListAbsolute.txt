@@ -23,3 +23,29 @@ C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Dat
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csproj.CoreCompileInputs.cache
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.genruntimeconfig.cache
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.deps.json
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.runtimeconfig.json
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.runtimeconfig.dev.json
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.dll
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.pdb
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csprojAssemblyReference.cache
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.AssemblyInfo.cs
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csproj.CopyComplete
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
+C:\Users\aline\codenation\Projeto Final\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.deps.json
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.runtimeconfig.json
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.runtimeconfig.dev.json
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.dll
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.pdb
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csprojAssemblyReference.cache
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.AssemblyInfo.cs
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.csproj.CopyComplete
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.dll
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.Data\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.Data.pdb

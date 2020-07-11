@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.API\\ErrorMonitoring.API.csproj": {}
+    "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.API\\ErrorMonitoring.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.API\\ErrorMonitoring.API.csproj": {
+    "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.API\\ErrorMonitoring.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.API\\ErrorMonitoring.API.csproj",
+        "projectUniqueName": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.API\\ErrorMonitoring.API.csproj",
         "projectName": "ErrorMonitoring.API",
-        "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.API\\ErrorMonitoring.API.csproj",
-        "packagesPath": "C:\\Users\\ThalitaMariano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.API\\obj\\",
+        "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.API\\ErrorMonitoring.API.csproj",
+        "packagesPath": "C:\\Users\\aline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThalitaMariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\aline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -32,11 +30,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj": {
-                "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj"
+              "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj": {
+                "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj"
               },
-              "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj": {
-                "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj"
+              "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj"
               }
             }
           }
@@ -61,6 +59,14 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -89,27 +95,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj": {
+    "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj",
         "projectName": "ErrorMonitoring.Dominio",
-        "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj",
-        "packagesPath": "C:\\Users\\ThalitaMariano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\obj\\",
+        "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj",
+        "packagesPath": "C:\\Users\\aline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThalitaMariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\aline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -155,27 +159,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj": {
+    "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj",
+        "projectUniqueName": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj",
         "projectName": "ErrorMonitoring.Infra.Data",
-        "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj",
-        "packagesPath": "C:\\Users\\ThalitaMariano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\obj\\",
+        "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj",
+        "packagesPath": "C:\\Users\\aline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThalitaMariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\aline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -187,8 +189,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj": {
-                "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj"
+              "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj": {
+                "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj"
               }
             }
           }
@@ -230,6 +232,10 @@
               "target": "Package",
               "version": "[3.1.5, )"
             },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
             "Microsoft.Extensions.Options": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -257,7 +263,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Test\\ErrorMonitoring.Test.csproj": {}
+    "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Test\\ErrorMonitoring.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Test\\ErrorMonitoring.Test.csproj": {
+    "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Test\\ErrorMonitoring.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Test\\ErrorMonitoring.Test.csproj",
+        "projectUniqueName": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Test\\ErrorMonitoring.Test.csproj",
         "projectName": "ErrorMonitoring.Test",
-        "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Test\\ErrorMonitoring.Test.csproj",
-        "packagesPath": "C:\\Users\\ThalitaMariano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Test\\obj\\",
+        "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Test\\ErrorMonitoring.Test.csproj",
+        "packagesPath": "C:\\Users\\aline\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\ThalitaMariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\aline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -75,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

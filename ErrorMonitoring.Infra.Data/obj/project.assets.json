@@ -363,6 +363,18 @@
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
+      "Microsoft.Extensions.Logging.Debug/3.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.5"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {}
+        }
+      },
       "Microsoft.Extensions.Options/3.1.5": {
         "type": "package",
         "dependencies": {
@@ -1529,10 +1541,7 @@
         },
         "runtime": {
           "bin/placeholder/ErrorMonitoring.Dominio.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -2075,6 +2084,22 @@
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "microsoft.extensions.logging.abstractions.3.1.5.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Debug/3.1.5": {
+      "sha512": "oDs0vlr6tNm0Z4U81eiCvnX+9zSP1CBAIGNAnpKidLb1KzbX26UGI627TfuIEtvW9wYiQWqZtmwMMK9WHE8Dqg==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.debug/3.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll",
+        "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Debug.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Debug.xml",
+        "microsoft.extensions.logging.debug.3.1.5.nupkg.sha512",
+        "microsoft.extensions.logging.debug.nuspec"
       ]
     },
     "Microsoft.Extensions.Options/3.1.5": {
@@ -5714,32 +5739,30 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.5",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.5",
       "Microsoft.Extensions.Configuration.FileExtensions >= 3.1.5",
+      "Microsoft.Extensions.Logging.Debug >= 3.1.5",
       "Microsoft.Extensions.Options >= 3.1.5",
       "System.Data.SqlClient >= 4.8.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ThalitaMariano\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Users\\aline\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj",
+      "projectUniqueName": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj",
       "projectName": "ErrorMonitoring.Infra.Data",
-      "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\ThalitaMariano\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\obj\\",
+      "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\ErrorMonitoring.Infra.Data.csproj",
+      "packagesPath": "C:\\Users\\aline\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\ThalitaMariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\aline\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5751,8 +5774,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj": {
-              "projectPath": "C:\\Users\\ThalitaMariano\\Documents\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj"
+            "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj": {
+              "projectPath": "C:\\Users\\aline\\codenation\\ErrorMonitoring\\API_Central_de_Erros\\ErrorMonitoring.Dominio\\ErrorMonitoring.Dominio.csproj"
             }
           }
         }
@@ -5794,6 +5817,10 @@
             "target": "Package",
             "version": "[3.1.5, )"
           },
+          "Microsoft.Extensions.Logging.Debug": {
+            "target": "Package",
+            "version": "[3.1.5, )"
+          },
           "Microsoft.Extensions.Options": {
             "target": "Package",
             "version": "[3.1.5, )"
@@ -5821,7 +5848,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

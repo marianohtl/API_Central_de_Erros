@@ -16,11 +16,11 @@ namespace ErrorMonitoring.Dominio.Services
             _eventsRepository = eventsRepository;
         }
 
-        public IList<Events> Events()
+        public IList<Events> Events(EventsFilter eventsFilter)
         {
             try
             {
-                return _eventsRepository.Get().ToList();
+                return _eventsRepository.GetBySearch(eventsFilter).ToList();
             }
             catch
             {

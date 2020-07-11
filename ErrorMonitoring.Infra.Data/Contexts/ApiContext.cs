@@ -2,10 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using ErrorMonitoring.Dominio.Entidades;
+using Microsoft.Extensions.Logging;
 
 namespace ErrorMonitoring.Infra.Data.Contexts
 {
-    public partial class ApiContext : DbContext
+    public partial class ApiContext : DbContext,IDisposable
     {
         public ApiContext()
         {
@@ -24,6 +25,8 @@ namespace ErrorMonitoring.Infra.Data.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()));
+
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS; Database=ErrorMonitoring; Integrated Security = True");

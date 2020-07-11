@@ -15,6 +15,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.5",
           "Microsoft.Extensions.Configuration.FileExtensions": "3.1.5",
+          "Microsoft.Extensions.Logging.Debug": "3.1.5",
           "Microsoft.Extensions.Options": "3.1.5",
           "System.Data.SqlClient": "4.8.1"
         },
@@ -322,6 +323,17 @@
       "Microsoft.Extensions.Logging.Abstractions/3.1.5": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "assemblyVersion": "3.1.5.0",
+            "fileVersion": "3.100.520.27009"
+          }
+        }
+      },
+      "Microsoft.Extensions.Logging.Debug/3.1.5": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "3.1.5"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Debug.dll": {
             "assemblyVersion": "3.1.5.0",
             "fileVersion": "3.100.520.27009"
           }
@@ -1271,6 +1283,13 @@
       "sha512": "sha512-ZvwowjRSWXewdPI+whPFXgwF4Qme6Q9KV9SCPEITSGiqHLArct7q5hTBtTzj3GPsVLjTqehvTg6Bd/EQk9JS0A==",
       "path": "microsoft.extensions.logging.abstractions/3.1.5",
       "hashPath": "microsoft.extensions.logging.abstractions.3.1.5.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Logging.Debug/3.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oDs0vlr6tNm0Z4U81eiCvnX+9zSP1CBAIGNAnpKidLb1KzbX26UGI627TfuIEtvW9wYiQWqZtmwMMK9WHE8Dqg==",
+      "path": "microsoft.extensions.logging.debug/3.1.5",
+      "hashPath": "microsoft.extensions.logging.debug.3.1.5.nupkg.sha512"
     },
     "Microsoft.Extensions.Options/3.1.5": {
       "type": "package",

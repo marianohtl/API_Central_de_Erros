@@ -10,9 +10,11 @@ namespace ErrorMonitoring.API
         {
             CreateMap<Environments, EnvironmentsDTO>().ReverseMap();
             CreateMap<Events, EventsDTO>().ReverseMap();
+            CreateMap<EventsFilter, EventsFilterDTO>().ReverseMap();
             CreateMap<Logs, LogsDTO>().ReverseMap();
             CreateMap<Projects, ProjectsDTO>().ReverseMap();
             CreateMap<ProjectsEnvironments, ProjectsEnvironmentsDTO>().ReverseMap();
+            
         }        
     
     }

@@ -6,8 +6,9 @@ using System.Text;
 namespace ErrorMonitoring.Dominio.Interfaces
 {
     public interface IEventsService
-    {
-        IList<Events> Events();
+    { 
+
+        IList<Events> Events(EventsFilter eventsFiltro);
 
         Events EventById(int ID);
 

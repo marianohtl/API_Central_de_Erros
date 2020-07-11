@@ -15,3 +15,11 @@ C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Dominio\o
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.dll
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.pdb
 C:\Users\ThalitaMariano\Documents\API_Central_de_Erros\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Dominio\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.deps.json
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Dominio\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.dll
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Dominio\bin\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.pdb
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.csprojAssemblyReference.cache
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.AssemblyInfoInputs.cache
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.AssemblyInfo.cs
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.dll
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Dominio\obj\Debug\netcoreapp3.1\ErrorMonitoring.Dominio.pdb

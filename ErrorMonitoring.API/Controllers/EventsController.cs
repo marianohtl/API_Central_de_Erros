@@ -11,13 +11,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ErrorMonitoring.API.Controllers
 {
+    
+    
     [Route("api/[controller]")]
     [ApiController]
+    
     public class EventsController : Controller
     {
         private readonly IEventsService _eventsService;
         private readonly IMapper _mapper;
-        
+
         public EventsController(IEventsService eventService, IMapper mapper)
         {
             _eventsService = eventService;
@@ -28,25 +31,25 @@ namespace ErrorMonitoring.API.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public ActionResult<IEnumerable<EventsDTO>> GetAll() 
+        public ActionResult<IEnumerable<EventsDTO>> GetAll([FromQuery] EventsFilterDTO eventsFiltroDTO) 
         {
-            var _events = _eventsService.Events().ToList();
-            if (_events != null){
-
-                var retorno = _mapper.Map<List<EventsDTO>>(_events);
-                return Ok(retorno);
-            
-            }else{
-                return NoContent();
+            var eventsFilter = _mapper.Map<EventsFilter>(eventsFiltroDTO);
+            var events = _eventsService.Events(eventsFilter);
+            if (events != null)
+            {
+                return Ok(_mapper.Map<List<EventsDTO>>(events));
             }
+
+            return NoContent();
         }
 
-        // GET: EventsController/Details/5
-        [HttpGet("{id}", Name = "Get")]
+        // GET: Events/5
+        [HttpGet("{id}", Name ="Get")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public ActionResult<EventsDTO> GetById(int id) {
+        public ActionResult<EventsDTO> GetById(int id) 
+        {
 
             var _events = _eventsService.EventById(id);
 
