@@ -27,6 +27,9 @@ namespace ErrorMonitoring.API
             services.AddDbContext<ApiContext>();
             services.AddScoped<IEventsService, EventsService>();
             services.AddScoped<IEventsRepository, EventsRepository>();
+            services.AddScoped<IProjectsService, ProjectsService>();
+            services.AddScoped<IProjectsRepository, ProjectsRepository>();
+
             services.AddScoped<ILogsService, LogsService>();
             services.AddScoped<ILogsRepository, LogsRepository>();
             services.AddAutoMapper(typeof(Startup));
