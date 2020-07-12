@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\BRUNA\\PROJETO FINAL- Central de erros - Codenation\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj": {}
+    "C:\\Users\\ThalitaMariano\\Desktop\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj": {}
   },
   "projects": {
-    "D:\\BRUNA\\PROJETO FINAL- Central de erros - Codenation\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj": {
+    "C:\\Users\\ThalitaMariano\\Desktop\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\BRUNA\\PROJETO FINAL- Central de erros - Codenation\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj",
+        "projectUniqueName": "C:\\Users\\ThalitaMariano\\Desktop\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj",
         "projectName": "ErrorMonitoring.Infra.CrossCutting",
-        "projectPath": "D:\\BRUNA\\PROJETO FINAL- Central de erros - Codenation\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj",
-        "packagesPath": "C:\\Users\\Bruna\\.nuget\\packages\\",
-        "outputPath": "D:\\BRUNA\\PROJETO FINAL- Central de erros - Codenation\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\obj\\",
+        "projectPath": "C:\\Users\\ThalitaMariano\\Desktop\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\ErrorMonitoring.Infra.CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\ThalitaMariano\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThalitaMariano\\Desktop\\API_Central_de_Erros\\ErrorMonitoring.Infra.CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Bruna\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ThalitaMariano\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -57,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

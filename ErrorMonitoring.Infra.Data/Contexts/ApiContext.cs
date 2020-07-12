@@ -26,7 +26,8 @@ namespace ErrorMonitoring.Infra.Data.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-QP4USBI\\BRUNA_SQLSERVER;Initial Catalog=ErrorMonitoring;Integrated Security=True");
+                //optionsBuilder.UseSqlServer("Data Source=DESKTOP-QP4USBI\\BRUNA_SQLSERVER;Initial Catalog=ErrorMonitoring;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS; Database=ErrorMonitoring; Integrated Security = True");
             }
         }
 
