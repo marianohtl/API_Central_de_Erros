@@ -7,7 +7,6 @@ namespace ErrorMonitoring.Dominio.Interfaces
 {
     public interface IEventsRepository
     {
-        
         IEnumerable<Events> GetBySearch(EventsFilter eventsFilter);
         Events GetById(int Id);
 

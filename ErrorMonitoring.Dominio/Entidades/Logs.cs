@@ -5,6 +5,7 @@ namespace ErrorMonitoring.Dominio.Entidades
 {
     public class Logs
     {
+
         public int Id { get; set; }
         public int Project { get; set; }
         public int EventType { get; set; }

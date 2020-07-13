@@ -7,6 +7,7 @@ namespace ErrorMonitoring.Dominio.Interfaces
 {
     public interface IEnvironmentsService
     {
+
         IList<Environments> Environments();
         Environments GetById(int id);
         Environments Save(Environments environment);

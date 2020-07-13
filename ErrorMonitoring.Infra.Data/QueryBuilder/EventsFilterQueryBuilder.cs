@@ -6,6 +6,7 @@ using System.Linq.Expressions;
 
 namespace ErrorMonitoring.Infra.Data.QueryBuilder
 {
+
     public class EventsFilterQueryBuilder
     {
         private IQueryable<Events> _queryable;

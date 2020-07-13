@@ -7,7 +7,6 @@ namespace ErrorMonitoring.Dominio.Interfaces
 {
     public interface IEventsService
     { 
-
         IList<Events> Events(EventsFilter eventsFilter);
 
         Events EventById(int ID);

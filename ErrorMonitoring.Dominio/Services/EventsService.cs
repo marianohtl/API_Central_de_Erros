@@ -9,6 +9,7 @@ namespace ErrorMonitoring.Dominio.Services
 {
     public class EventsService : IEventsService
     {
+
         public readonly IEventsRepository _eventsRepository;
 
         public EventsService(IEventsRepository eventsRepository)

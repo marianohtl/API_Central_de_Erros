@@ -34,7 +34,7 @@ namespace ErrorMonitoring.API.Controllers
             if (_projectsEnvironments != null)
             {
 
-                var retorno = _mapper.Map<List<EnvironmentsDTO>>(_projectsEnvironments);
+                var retorno = _mapper.Map<List<ProjectsEnvironmentsDTO>>(_projectsEnvironments);
                 return Ok(retorno);
 
             }

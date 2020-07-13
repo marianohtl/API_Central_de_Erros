@@ -16,6 +16,7 @@ namespace ErrorMonitoring.Infra.Data.Repository
             this._apiContext = apiContext;
         }
 
+
         public IEnumerable<Environments> Get()
         {
             return _apiContext.Environments;
@@ -39,7 +40,7 @@ namespace ErrorMonitoring.Infra.Data.Repository
             var _environment = _apiContext.Environments.Where(x => x.Id == environment.Id).FirstOrDefault();
             if (_environment != null)
             {
-                _environment.EName = environment.EName;
+                _environment.EnvName = environment.EnvName;
                 _apiContext.Entry(_environment).State = EntityState.Modified;
                 _apiContext.SaveChanges();
             }

@@ -35,6 +35,7 @@ namespace ErrorMonitoring.Infra.Data.Repository
             return projectsenvironment;
         }
 
+
         public ProjectsEnvironments Update(ProjectsEnvironments projectsenvironment)
         {
             var _projectsenvironment = _apiContext.ProjectsEnvironments.Where(x => x.Id == projectsenvironment.Id).FirstOrDefault();

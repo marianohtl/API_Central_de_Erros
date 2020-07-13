@@ -6,3 +6,11 @@ C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCut
 C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.AssemblyInfo.cs
 C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.dll
 C:\Users\ThalitaMariano\Documents\ErrorMonitoring\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.pdb
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.CrossCutting\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.deps.json
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.CrossCutting\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.dll
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.CrossCutting\bin\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.pdb
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.csprojAssemblyReference.cache
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.AssemblyInfoInputs.cache
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.AssemblyInfo.cs
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.dll
+C:\Users\aline\codenation\ErrorMonitoring\API_Central_de_Erros\ErrorMonitoring.Infra.CrossCutting\obj\Debug\netcoreapp3.1\ErrorMonitoring.Infra.CrossCutting.pdb

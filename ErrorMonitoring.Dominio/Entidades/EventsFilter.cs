@@ -6,6 +6,7 @@ namespace ErrorMonitoring.Dominio.Entidades
 {
     public class EventsFilter
     {
+
         public string Environment { get; set; }
 
         public string Level { get; set; }

@@ -12,7 +12,7 @@ namespace ErrorMonitoring.Infra.Data.Contexts
         {
         }
 
-
+        
         public ApiContext(DbContextOptions<ApiContext> options)
             : base(options)
         {
@@ -42,9 +42,9 @@ namespace ErrorMonitoring.Infra.Data.Contexts
 
                 entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.EName)
+                entity.Property(e => e.EnvName)
                     .IsRequired()
-                    .HasColumnName("eName")
+                    .HasColumnName("envName")
                     .HasMaxLength(200)
                     .IsUnicode(false);
             });
