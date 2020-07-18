@@ -7,12 +7,11 @@ namespace ErrorMonitoring.Dominio.Entidades
         public Environments()
         {
             ProjectsEnvironments = new HashSet<ProjectsEnvironments>();
-
         
         }
 
         public int Id { get; set; }
-        public string EName { get; set; }
+        public string EnvName { get; set; }
 
         public virtual ICollection<ProjectsEnvironments> ProjectsEnvironments { get; set; }
     }

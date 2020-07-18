@@ -5,6 +5,7 @@ namespace ErrorMonitoring.Dominio.Entidades
 {
     public class Projects
     {
+
         public Projects()
         {
             Logs = new HashSet<Logs>();

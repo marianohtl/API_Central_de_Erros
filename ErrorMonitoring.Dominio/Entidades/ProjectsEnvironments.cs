@@ -10,6 +10,7 @@ namespace ErrorMonitoring.Dominio.Entidades
         public int Project { get; set; }
         public int Environment { get; set; }
 
+
         public virtual Environments EnvironmentNavigation { get; set; }
         public virtual Projects ProjectNavigation { get; set; }
     }

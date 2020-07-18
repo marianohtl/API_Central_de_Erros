@@ -27,11 +27,19 @@ namespace ErrorMonitoring.API
             services.AddDbContext<ApiContext>();
             services.AddScoped<IEventsService, EventsService>();
             services.AddScoped<IEventsRepository, EventsRepository>();
+<<<<<<< HEAD
             services.AddScoped<IProjectsService, ProjectsService>();
             services.AddScoped<IProjectsRepository, ProjectsRepository>();
 
             services.AddScoped<ILogsService, LogsService>();
             services.AddScoped<ILogsRepository, LogsRepository>();
+=======
+            services.AddScoped<IEnvironmentsService, EnvironmentsService>();
+            services.AddScoped<IEnvironmentsRepository, EnvironmentsRepository>();
+            services.AddScoped<IProjectsEnvironmentsService, ProjectsEnvironmentsService>();
+            services.AddScoped<IProjectsEnvironmentsRepository, ProjectsEnvironmentsRepository>();
+
+>>>>>>> aline
             services.AddAutoMapper(typeof(Startup));
 
 

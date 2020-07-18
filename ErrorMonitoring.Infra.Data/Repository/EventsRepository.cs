@@ -1,26 +1,28 @@
 ﻿using ErrorMonitoring.Dominio.Entidades;
 using ErrorMonitoring.Dominio.Interfaces;
 using ErrorMonitoring.Infra.Data.Contexts;
+using ErrorMonitoring.Infra.Data.QueryBuilder;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
+
 
 namespace ErrorMonitoring.Infra.Data.Repository
 {
     public class EventsRepository : IEventsRepository
     {
         private readonly ApiContext context;
-
         public EventsRepository(ApiContext context)
         {
             this.context = context;
         }
 
-        public IEnumerable<Events> Get()
+        public IEnumerable<Events> GetBySearch(EventsFilter filter)
         {
-            return context.Events;
+            return new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter).Build();   
         }
 
         public Events GetById(int Id)

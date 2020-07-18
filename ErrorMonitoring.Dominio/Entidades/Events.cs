@@ -20,6 +20,7 @@ namespace ErrorMonitoring.Dominio.Entidades
         public string EException { get; set; }
         public string EColectedBy { get; set; }
 
+
         public virtual ICollection<Logs> Logs { get; set; }
     }
 }

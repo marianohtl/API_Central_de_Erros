@@ -9,6 +9,7 @@ namespace ErrorMonitoring.Dominio.Services
 {
     public class EventsService : IEventsService
     {
+
         public readonly IEventsRepository _eventsRepository;
 
         public EventsService(IEventsRepository eventsRepository)
@@ -16,18 +17,17 @@ namespace ErrorMonitoring.Dominio.Services
             _eventsRepository = eventsRepository;
         }
 
-        public IList<Events> Events()
+        public IList<Events> Events(EventsFilter eventsFilter)
         {
             try
             {
-                return _eventsRepository.Get().ToList();
+                return _eventsRepository.GetBySearch(eventsFilter).ToList();
             }
             catch
             {
                 return new List<Events>();
             }
         }
-
         public Events EventById(int ID)
         {
             try

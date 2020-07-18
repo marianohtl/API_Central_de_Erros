@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using ErrorMonitoring.Dominio.Entidades;
+using Microsoft.Extensions.Logging;
 
 namespace ErrorMonitoring.Infra.Data.Contexts
 {
-    public partial class ApiContext : DbContext
+    public partial class ApiContext : DbContext,IDisposable
     {
         public ApiContext()
         {
         }
 
+        
         public ApiContext(DbContextOptions<ApiContext> options)
             : base(options)
         {
@@ -24,6 +26,8 @@ namespace ErrorMonitoring.Infra.Data.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseLoggerFactory(LoggerFactory.Create(builder => builder.AddConsole()));
+
             if (!optionsBuilder.IsConfigured)
             {
                 //optionsBuilder.UseSqlServer("Data Source=DESKTOP-QP4USBI\\BRUNA_SQLSERVER;Initial Catalog=ErrorMonitoring;Integrated Security=True");
@@ -39,9 +43,9 @@ namespace ErrorMonitoring.Infra.Data.Contexts
 
                 entity.Property(e => e.Id).HasColumnName("ID");
 
-                entity.Property(e => e.EName)
+                entity.Property(e => e.EnvName)
                     .IsRequired()
-                    .HasColumnName("eName")
+                    .HasColumnName("envName")
                     .HasMaxLength(200)
                     .IsUnicode(false);
             });
