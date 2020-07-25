@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "cbb56cb1-7c4c-4871-bd92-6b1394dcc911",
+		"name": "ErrorMonitoring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57105/api/Events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57105",
+					"path": [
+						"api",
+						"Events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get/id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57105/api/Events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57105",
+					"path": [
+						"api",
+						"Events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eStatus\": \"10000000\",\r\n    \"eLevel\": \"ERROR\",\r\n    \"eOrigin\": \"127.0.0.1\",\r\n    \"eDate\": \"2020-05-12T00:00:00\",\r\n    \"eMessage\": \"message java.lang.NullPointerException\",\r\n    \"eDescription\": \"description The server encountered an internal error that prevented it from fulfilling this request.\",\r\n    \"eException\": \"org.apache.jasper.JasperException: java.lang.NullPointerException org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:549) org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470) org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390) org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334) javax.servlet.http.HttpServlet.service(HttpServlet.java:72\\r\\nroot cause\\r\\n[code]\\r\\njava.lang.NullPointerException\\r\\nClass.DAOJogos.consultarJogos(DAOJogos.java:53)\\r\\norg.apache.jsp.grid_jsp._jspService(grid_jsp.java:84)\\r\\norg.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)\\r\\njavax.servlet.http.HttpServlet.service(HttpServlet.java:72\\r\\norg.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)\\r\\norg.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)\\r\\norg.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)\\r\\njavax.servlet.http.HttpServlet.service(HttpServlet.java:72\\r\\nnote The full stack trace of the root cause is available in the Apache Tomcat/7.0.33 logs.\\r\\nApache Tomcat/7.0.33 [/code]\",\r\n    \"eColectedBy\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57105/api/Events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57105",
+					"path": [
+						"api",
+						"Events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"eStatus\": \"10000000\",\r\n    \"eLevel\": \"ERROR\",\r\n    \"eOrigin\": \"127.0.0.1\",\r\n    \"eDate\": \"2020-05-12T00:00:00\",\r\n    \"eMessage\": \"message java.lang.NullPointerException\",\r\n    \"eDescription\": \"description The server encountered an internal error that prevented it from fulfilling this request.\",\r\n    \"eException\": \"org.apache.jasper.JasperException: java.lang.NullPointerException org.apache.jasper.servlet.JspServletWrapper.handleJspException(JspServletWrapper.java:549) org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:470) org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390) org.apache.jasper.servlet.JspServlet.service(JspServlet.java:334) javax.servlet.http.HttpServlet.service(HttpServlet.java:72\\r\\nroot cause\\r\\n[code]\\r\\njava.lang.NullPointerException\\r\\nClass.DAOJogos.consultarJogos(DAOJogos.java:53)\\r\\norg.apache.jsp.grid_jsp._jspService(grid_jsp.java:84)\\r\\norg.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)\\r\\njavax.servlet.http.HttpServlet.service(HttpServlet.java:72\\r\\norg.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)\\r\\norg.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:390)\\r\\norg.apache.jasper.servlet.JspServlet.service(JspServlet.java:334)\\r\\njavax.servlet.http.HttpServlet.service(HttpServlet.java:72\\r\\nnote The full stack trace of the root cause is available in the Apache Tomcat/7.0.33 logs.\\r\\nApache Tomcat/7.0.33 [/code]\",\r\n    \"eColectedBy\": null\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:57105/api/Events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57105",
+					"path": [
+						"api",
+						"Events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get/id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:57105/api/Events/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "57105",
+					"path": [
+						"api",
+						"Events",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
