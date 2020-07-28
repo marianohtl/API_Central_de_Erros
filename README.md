@@ -47,42 +47,42 @@ Neste projeto vamos implementar um sistema para centralizar registros de erros d
 
 ## Rotas: <a name="rotas"></a>
 
--AuthController
+-AuthController<br/>
 `POST /api/v1/Auth/cadastrar` - Cadastra um novo usuário<br/>
 `POST /api/v1/Auth/login` - Realiza login do usuário cadastrado<br/>
 `POST /api/v1/Auth/logout` - Realiza o logout do usuário<br/>
 `POST /api/v1/Auth/forgotPassword` - Envia um codigo para que o usuário possa resetar a senha<br/>
 `POST /api/v1/Auth/resetPassword` -<br/>
 
--EnvironmentController
+-EnvironmentController<br/>
 `GET api/environments` - Retorna todos os ambientes da ErrorMonitoring<br/>
 `GET api/environments/{id}` - Retorna o ambiente do ID<br/>
 `POST api/environments` - Cadastra um novo ambiente<br/>
 `PUT api/environments/{id}` - Atualiza o ambiente do ID<br/>
 `DELETE api/environments/{id}` - Deleta o ambiente do ID<br/>
 
--ProjectController
+-ProjectController<br/>
 `GET 	api/project` - Retorna todos os projetos da ErrorMonitoring<br/>
 `GET 	api/project/{id}` - Retorna o projeto do ID<br/>
 `POST 	api/project` - Cadastra um novo projeto<br/>
 `PUT 	api/project/{id}` - Atualiza o projeto do ID<br/>
 `DELETE	api/project/{id}` - Deleta o projeto do ID<br/>
 
--EventsController
+-EventsController<br/>
 `GET 	/api/Events` - Retorna todos os eventos da ErrorMonitoring<br/>
 `GET 	/api/Events/{id}` - Retorna o evento do ID<br/>
 `POST 	/api/Events` - Cadastra um novo evento<br/>
 `PUT 	/api/Events/{id}` - Atualiza o evento<br/>
 `DELETE	/api/Events/{id}` - Deleta o evento do ID<br/>
 
--LogController
+-LogController<br/>
 `GET 	api/log`	- Retorna todos os logs da ErrorMonitoring<br/>
 `GET 	api/log/{id}` - Retorna o log do ID<br/>
 `POST 	api/log` - Cadastra um novo log<br/> 
 `PUT 	api/log/{id}` - Atualiza o log do ID<br/>
 `DELETE	api/log/{id}` - Deleta o log do ID<br/>
 
--ProjectsEnvironments
+-ProjectsEnvironments<br/>
 `GET 	api/projects_environments` - Retorna todos os ambientes e projetos relacionados da ErrorMonitoring<br/>
 `GET 	api/projects_environments/{id}`	- Retorna o ambiente e projeto relacionados do ID<br/>
 `POST 	api/projects_environments` - Cadastra um novo ambiente e projeto relacionados<br/>
