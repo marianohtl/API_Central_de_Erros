@@ -29,8 +29,11 @@ Neste projeto implementamos um sistema para centralizar registros de erros de ap
 
 ### Tecnologias Utilizadas: <a name="tecnologias"></a>
 - C# .NET Core
-- Entity Framework
+- Entity Framework Core
+- DDD
 - Clean Code
+- SOLID
+- Azure
 - Swagger
 
 ### Ferramentas Utilizadas: <a name="ferramentas"></a>
