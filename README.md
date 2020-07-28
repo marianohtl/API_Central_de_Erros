@@ -83,12 +83,12 @@ Neste projeto vamos implementar um sistema para centralizar registros de erros d
 
 #### Squad desenvolvedora: <a name="squad"></a>
 
-[Aline Saouda](https://www.linkedin.com/in/aline-saouda-42242856/)
+- [Aline Saouda](https://www.linkedin.com/in/aline-saouda-42242856/)
 
-[Bruna Stefani Marques](https://www.linkedin.com/in/bruna-stefani-marques-736a58b1/)	
+- [Bruna Stefani Marques](https://www.linkedin.com/in/bruna-stefani-marques-736a58b1/)	
 
-[Juliana Onofrio Marques](https://www.linkedin.com/in/julianaonofrio/)
+- [Juliana Onofrio Marques](https://www.linkedin.com/in/julianaonofrio/)
 
-[Thalita Mariano](https://www.linkedin.com/in/thalita-mariano-971b48172/)
+- [Thalita Mariano](https://www.linkedin.com/in/thalita-mariano-971b48172/)
 
 ### Agradecimentos: <a name="agradecimentos"></a>
