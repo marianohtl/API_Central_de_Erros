@@ -28,7 +28,7 @@ Neste projeto implementamos um sistema para centralizar registros de erros de ap
 - a API deve ser segura, permitindo acesso apenas com um token de autenticação válido
 
 ### Tecnologias Utilizadas: <a name="tecnologias"></a>
-- C# .NET
+- C# .NET Core
 - Entity Framework
 - Clean Code
 - Swagger
