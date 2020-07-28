@@ -92,7 +92,7 @@ Neste projeto vamos implementar um sistema para centralizar registros de erros d
 ### Maiores informações: <a name="more"></a>
 - Esta API é um projeto desenvolvido para o AceleraDev C# Woman ClearSale, um projeto da Codenation.
 
-#### Squad desenvolvedora: <a name="squad"></a>
+### Squad desenvolvedora: <a name="squad"></a>
 
 - [Aline Saouda](https://www.linkedin.com/in/aline-saouda-42242856/)
 
