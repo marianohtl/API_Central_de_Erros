@@ -39,13 +39,13 @@ Neste projeto vamos implementar um sistema para centralizar registros de erros d
 - Trello
 - WhatsApp
 
-## Banco de Dados: <a name="bd"></a>
+### Banco de Dados: <a name="bd"></a>
 - SqlServer via Codefirst
 
-## Deploy da aplicação: <a name="deploy"></a>
+### Deploy da aplicação: <a name="deploy"></a>
 - Deploy automático Azure [Clique aqui](https://errormonitoring.azurewebsites.net/swagger/index.html)
 
-## Rotas: <a name="rotas"></a>
+### Rotas: <a name="rotas"></a>
 
 - AuthController<br/>
 `POST /api/v1/Auth/cadastrar` - Cadastra um novo usuário<br/>
