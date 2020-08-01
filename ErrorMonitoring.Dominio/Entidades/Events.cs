@@ -22,5 +22,7 @@ namespace ErrorMonitoring.Dominio.Entidades
 
 
         public virtual ICollection<Logs> Logs { get; set; }
+
+
     }
 }

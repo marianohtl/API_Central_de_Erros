@@ -30,7 +30,8 @@ namespace ErrorMonitoring.API.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<IEnumerable<EventsDTO>> GetAll([FromQuery] EventsFilterDTO eventsFiltroDTO) 
-        {
+       {
+
             var eventsFilter = _mapper.Map<EventsFilter>(eventsFiltroDTO);
             var events = _eventsService.Events(eventsFilter);
             if (events != null)
@@ -42,7 +43,7 @@ namespace ErrorMonitoring.API.Controllers
         }
 
         // GET: Events/5
-        [HttpGet("{id}", Name ="Get")]
+        [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -81,7 +82,7 @@ namespace ErrorMonitoring.API.Controllers
         }
 
         // POST: EventsController/Edit/5
-        [HttpPut]
+        [HttpPut("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

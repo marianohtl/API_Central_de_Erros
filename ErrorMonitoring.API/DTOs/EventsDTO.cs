@@ -17,7 +17,9 @@ namespace ErrorMonitoring.API.DTOs
         public string EException { get; set; }
         public string EColectedBy { get; set; }
 
-
         public virtual ICollection<LogsDTO> Logs { get; set; }
-}
+
+
+
+    }
 }

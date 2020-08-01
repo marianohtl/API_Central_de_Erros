@@ -3,6 +3,7 @@ using ErrorMonitoring.Dominio.Interfaces;
 using ErrorMonitoring.Infra.Data.Contexts;
 using ErrorMonitoring.Infra.Data.QueryBuilder;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,46 @@ namespace ErrorMonitoring.Infra.Data.Repository
 
         public IEnumerable<Events> GetBySearch(EventsFilter filter)
         {
-            return new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter).Build();   
+            var qry= new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter, context).Build();
+            return OrderByFrequency(qry,filter);
+            
+        }
+
+        private IEnumerable<Events> OrderByFrequency(IEnumerable<Events> qry, EventsFilter filter)
+        {
+
+            if (filter.OrderBy.Trim().ToLower() != null)
+            {
+                if (filter.OrderBy.Trim().ToLower() == "frequency")
+                {
+                    var ordenacao = context.Events.GroupBy(x => x.ELevel)
+                                            .Select(group => new
+                                            {
+                                                Level = group.Key,
+                                                Quantidade = group.Count()
+                                            })
+                                            .OrderBy(x => x.Quantidade)
+                                            .ToList();                                  
+                    return qry.OrderBy(x => ordenacao.Select(y => y.Level).IndexOf(x.ELevel)).ToList();
+                }
+            }
+            else if (filter.OrderByDescending.Trim().ToLower() != null)
+            {
+                if (filter.OrderByDescending.Trim().ToLower() == "frequency")
+                {
+                    var ordenacao = context.Events.GroupBy(x => x.ELevel)
+                                            .Select(group => new
+                                            {
+                                                Level = group.Key,
+                                                Quantidade = group.Count()
+                                            })
+                                            .OrderByDescending(x => x.Quantidade)
+                                            .ToList();
+
+                    return qry.OrderBy(x => ordenacao.Select(y => y.Level).IndexOf(x.ELevel)).ToList();
+                }
+            }
+            return qry;
         }
 
         public Events GetById(int Id)

@@ -6,7 +6,7 @@ namespace ErrorMonitoring.Dominio.Entidades
 {
     public class EventsFilter
     {
-
+        public string Project { get; set; }
         public string Environment { get; set; }
 
         public string Level { get; set; }
@@ -17,9 +17,10 @@ namespace ErrorMonitoring.Dominio.Entidades
 
         public string OrderByName { get; set; }
 
-        public string OrderByDirection { get; set; }
+        public string OrderByDescending { get; set; }
 
-        public bool IsOrderAsc() => OrderByDirection?.Trim()?.ToLower() == "asc";
-        public bool IsOrderDesc() => OrderByDirection?.Trim()?.ToLower() == "desc";
+        public string OrderBy { get; set; }
+        
+
     }
 }

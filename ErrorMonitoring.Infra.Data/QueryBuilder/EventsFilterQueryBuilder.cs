@@ -1,4 +1,6 @@
 ﻿using ErrorMonitoring.Dominio.Entidades;
+using ErrorMonitoring.Infra.Data.Contexts;
+using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,13 +13,25 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
     {
         private IQueryable<Events> _queryable;
         private readonly EventsFilter _filter;
+        private readonly ApiContext context;
 
-        public EventsFilterQueryBuilder(IQueryable<Events> queryable, EventsFilter filter)
+        public EventsFilterQueryBuilder(IQueryable<Events> queryable, EventsFilter filter,ApiContext context)
         {
             _queryable = queryable;
             _filter = filter;
+            this.context = context;
         }
 
+        public IEnumerable<Events> Build()
+        {
+            
+            WhereByEnvironment();
+            WhereByLevel();
+            WhereByDescription();
+            OrderBy();
+            OrderByDescending();
+            return _queryable.AsEnumerable();
+        }
         private void WhereByLevel()
         {
             if (!string.IsNullOrWhiteSpace(_filter.Level))
@@ -35,49 +49,58 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
         }
 
 
-        //private void WhereByEnvironment()
-        //{
-        //    if (!string.IsNullOrWhiteSpace(_filter.Environment))
-        //    {
-        //        _queryable = _queryable.Where(x => x.EProject == _filter.Description);
-        //    }
-        //}
-        public IEnumerable<Events> Build()
+        private void WhereByEnvironment()
         {
-            WhereByLevel();
-            WhereByDescription();
-            OrderBy();
-            return _queryable.AsEnumerable();
-        }
+            if (!string.IsNullOrWhiteSpace(_filter.Environment))
+            {
+                Projects project;
+                if (!string.IsNullOrWhiteSpace(_filter.Project))
+                {
+                    project = context.Projects.Where(x => x.PName == _filter.Project).FirstOrDefault();
+                }
+                else
+                {
+                    project = context.Projects.FirstOrDefault();
+                }
 
+
+                var queryEnvironment = context.Environments.Where(x => x.EnvName == _filter.Environment).Select(x => x.Id);
+                var projectsEnvironments = context.ProjectsEnvironments.Where(x => queryEnvironment.Contains(x.Environment) && project.Id==x.ProjectNavigation.Id).Select(x => x.Project);
+                var queryLogs = context.Logs.Where(x => projectsEnvironments.Contains(x.Project)).Select(x => x.EventType);
+                _queryable = _queryable.Where(x => queryLogs.Contains(x.Id));
+            }
+            
+        }
+        
+
+        private void OrderByDescending()
+        {
+            if (string.IsNullOrWhiteSpace(_filter.OrderByDescending))
+            {
+                return;
+            }
+
+            if (_filter.OrderByDescending.Trim().ToLower() == "level")
+            {
+                _queryable = _queryable.OrderByDescending(x => x.ELevel);
+            }
+
+        }
         private void OrderBy()
         {
-            if (string.IsNullOrWhiteSpace(_filter.OrderByName))
+            if (string.IsNullOrWhiteSpace(_filter.OrderBy))
             {
+                //_queryable = _queryable.OrderBy(x => x.Id);
                 return;
             }
 
-            Expression<Func<Events, object>> exp = GetOrderByFieldExpression(_filter.OrderByName);
-
-            if (_filter.IsOrderDesc())
+            if (_filter.OrderBy.Trim().ToLower() == "level")
             {
-                _queryable = _queryable.OrderByDescending(exp);
-                return;
-            }
-            _queryable = _queryable.OrderBy(exp);
-        }
-        private Expression<Func<Events, object>> GetOrderByFieldExpression(string orderByField)
-        {
-            switch (orderByField.Trim().ToLower())
-            {
-                case "status": 
-                    return x => x.EStatus;
-                
-                case "id":
-                default: 
-                    return x => x.Id;
+                _queryable = _queryable.OrderBy(x => x.ELevel);
             }
 
         }
+
     }
 }
+

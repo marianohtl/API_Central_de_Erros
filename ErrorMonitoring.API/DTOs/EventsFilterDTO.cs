@@ -7,7 +7,7 @@ namespace ErrorMonitoring.API.DTOs
 {
     public class EventsFilterDTO
     {
-
+        public string Project { get; set; }
         public string Environment { get; set; }
         
         public string Level { get; set; }
@@ -16,8 +16,8 @@ namespace ErrorMonitoring.API.DTOs
 
         public string Description { get; set; }
 
-        public string OrderByName { get; set; }
+        public string OrderBy { get; set; }
 
-        public string OrderByDirection { get; set; }
+        public string OrderByDescending { get; set; }
     }
 }
