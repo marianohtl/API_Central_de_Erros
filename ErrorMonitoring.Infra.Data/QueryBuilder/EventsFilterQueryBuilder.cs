@@ -15,7 +15,7 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
         private readonly EventsFilter _filter;
         private readonly ApiContext context;
 
-        public EventsFilterQueryBuilder(IQueryable<Events> queryable, EventsFilter filter,ApiContext context)
+        public EventsFilterQueryBuilder(IQueryable<Events> queryable, EventsFilter filter, ApiContext context)
         {
             _queryable = queryable;
             _filter = filter;
@@ -24,13 +24,22 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
 
         public IEnumerable<Events> Build()
         {
-            
+            WhereByArchived();
             WhereByEnvironment();
             WhereByLevel();
             WhereByDescription();
             OrderBy();
             OrderByDescending();
             return _queryable.AsEnumerable();
+        }
+        private void WhereByArchived()
+        {
+            if (!string.IsNullOrWhiteSpace(_filter.Archived) && string.IsNullOrWhiteSpace(_filter.Environment))
+            {
+                bool archived = _filter.Archived == "true" ? true : false;
+                var queryLogs = context.Logs.Where(x => x.Archived == archived).Select(y => y.Id);
+                _queryable = _queryable.Where(x => queryLogs.Contains(x.Id));
+            }
         }
         private void WhereByLevel()
         {
@@ -54,6 +63,7 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
             if (!string.IsNullOrWhiteSpace(_filter.Environment))
             {
                 Projects project;
+                bool archived = false;
                 if (!string.IsNullOrWhiteSpace(_filter.Project))
                 {
                     project = context.Projects.Where(x => x.PName == _filter.Project).FirstOrDefault();
@@ -63,15 +73,19 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
                     project = context.Projects.FirstOrDefault();
                 }
 
+                if (!string.IsNullOrWhiteSpace(_filter.Archived))
+                {
+                    archived = _filter.Archived == "true" ? true : false;
+                }
 
                 var queryEnvironment = context.Environments.Where(x => x.EnvName == _filter.Environment).Select(x => x.Id);
-                var projectsEnvironments = context.ProjectsEnvironments.Where(x => queryEnvironment.Contains(x.Environment) && project.Id==x.ProjectNavigation.Id).Select(x => x.Project);
-                var queryLogs = context.Logs.Where(x => projectsEnvironments.Contains(x.Project)).Select(x => x.EventType);
+                var projectsEnvironments = context.ProjectsEnvironments.Where(x => queryEnvironment.Contains(x.Environment) && project.Id == x.ProjectNavigation.Id).Select(x => x.Project);
+                var queryLogs = context.Logs.Where(x => projectsEnvironments.Contains(x.Project) && x.Archived == archived).Select(x => x.EventType);
                 _queryable = _queryable.Where(x => queryLogs.Contains(x.Id));
             }
-            
+
         }
-        
+
 
         private void OrderByDescending()
         {

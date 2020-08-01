@@ -15,12 +15,10 @@ namespace ErrorMonitoring.Dominio.Entidades
 
         public string Description { get; set; }
 
-        public string OrderByName { get; set; }
+        public string Archived { get; set; }
 
         public string OrderByDescending { get; set; }
 
         public string OrderBy { get; set; }
-        
-
     }
 }

@@ -23,44 +23,26 @@ namespace ErrorMonitoring.Infra.Data.Repository
 
         public IEnumerable<Events> GetBySearch(EventsFilter filter)
         {
-            var qry= new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter, context).Build();
-            return OrderByFrequency(qry,filter);
-            
+            var qry = new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter, context).Build();
+            return OrderByDescendingFrequency(qry, filter);
+
         }
 
-        private IEnumerable<Events> OrderByFrequency(IEnumerable<Events> qry, EventsFilter filter)
+        private IEnumerable<Events> OrderByDescendingFrequency(IEnumerable<Events> qry, EventsFilter filter)
         {
-
-            if (filter.OrderBy.Trim().ToLower() != null)
+            if (!string.IsNullOrWhiteSpace(filter.OrderByDescending) && (filter.OrderByDescending.Trim().ToLower() == "frequency"))
             {
-                if (filter.OrderBy.Trim().ToLower() == "frequency")
-                {
-                    var ordenacao = context.Events.GroupBy(x => x.ELevel)
-                                            .Select(group => new
-                                            {
-                                                Level = group.Key,
-                                                Quantidade = group.Count()
-                                            })
-                                            .OrderBy(x => x.Quantidade)
-                                            .ToList();                                  
-                    return qry.OrderBy(x => ordenacao.Select(y => y.Level).IndexOf(x.ELevel)).ToList();
-                }
-            }
-            else if (filter.OrderByDescending.Trim().ToLower() != null)
-            {
-                if (filter.OrderByDescending.Trim().ToLower() == "frequency")
-                {
-                    var ordenacao = context.Events.GroupBy(x => x.ELevel)
-                                            .Select(group => new
-                                            {
-                                                Level = group.Key,
-                                                Quantidade = group.Count()
-                                            })
-                                            .OrderByDescending(x => x.Quantidade)
-                                            .ToList();
+                var ordenacao = qry.GroupBy(x => x.ELevel)
+                                    .Select(group => new
+                                    {
+                                        Level = group.Key,
+                                        Quantidade = group.Count()
+                                    })
+                                    .OrderByDescending(x => x.Quantidade)
+                                    .ToList();
 
-                    return qry.OrderBy(x => ordenacao.Select(y => y.Level).IndexOf(x.ELevel)).ToList();
-                }
+                return qry.OrderBy(x => ordenacao.Select(y => y.Level).IndexOf(x.ELevel)).ToList();
+
             }
             return qry;
         }
