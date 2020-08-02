@@ -3,6 +3,7 @@ using ErrorMonitoring.Dominio.Interfaces;
 using ErrorMonitoring.Infra.Data.Contexts;
 using ErrorMonitoring.Infra.Data.QueryBuilder;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +23,28 @@ namespace ErrorMonitoring.Infra.Data.Repository
 
         public IEnumerable<Events> GetBySearch(EventsFilter filter)
         {
-            return new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter).Build();   
+            var qry = new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter, context).Build();
+            return OrderByDescendingFrequency(qry, filter);
+
+        }
+
+        private IEnumerable<Events> OrderByDescendingFrequency(IEnumerable<Events> qry, EventsFilter filter)
+        {
+            if (!string.IsNullOrWhiteSpace(filter.OrderByDescending) && (filter.OrderByDescending.Trim().ToLower() == "frequency"))
+            {
+                var ordenacao = qry.GroupBy(x => x.ELevel)
+                                    .Select(group => new
+                                    {
+                                        Level = group.Key,
+                                        Quantidade = group.Count()
+                                    })
+                                    .OrderByDescending(x => x.Quantidade)
+                                    .ToList();
+
+                return qry.OrderBy(x => ordenacao.Select(y => y.Level).IndexOf(x.ELevel)).ToList();
+
+            }
+            return qry;
         }
 
         public Events GetById(int Id)
