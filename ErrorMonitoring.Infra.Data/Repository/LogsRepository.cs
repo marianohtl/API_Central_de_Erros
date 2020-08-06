@@ -32,7 +32,6 @@ namespace ErrorMonitoring.Infra.Data.Repository
         {
             var state = logs.Id == 0 ? EntityState.Added : EntityState.Modified;
             context.Entry(logs).State = state;
-            context.Add(logs);
             context.SaveChanges();
             return logs;
         }

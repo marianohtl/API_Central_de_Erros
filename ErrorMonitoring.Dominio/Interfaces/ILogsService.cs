@@ -10,6 +10,6 @@ namespace ErrorMonitoring.Dominio.Interfaces
         Logs LogsById(int ID);
         Logs Salvar(Logs logs);
         Logs Atualizar(Logs logs);
-        bool Deletar(int ID);
+        bool Deletar(int ID); 
     }
 }

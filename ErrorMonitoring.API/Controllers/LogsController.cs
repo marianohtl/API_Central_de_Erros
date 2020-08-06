@@ -92,7 +92,49 @@ namespace ErrorMonitoring.API.Controllers
             if (log != null)
             {
                 var retorno = _mapper.Map<LogsDTO>(log);
-                return Ok(log);
+                return Ok(retorno);
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+        // PUT: api/setFiledErrors/5
+        [HttpPut("setFiledLogs/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<bool> SetFiledErrors(int id)
+        {
+            var log = _logsService.LogsById(id);
+            if (log != null)
+            {
+                log.Archived = true;
+                var retornLog = _logsService.Salvar(log);
+                var retorno = _mapper.Map<LogsDTO>(retornLog);
+                return Ok(retorno);
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+        // PUT: api/setUnarchiveErrors/5
+        [HttpPut("setUnarchiveLogs/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<bool> SetUnarchiveErrors(int id)
+        {
+            var log = _logsService.LogsById(id);
+            if (log != null)
+            {
+                log.Archived = false;
+                var retornLog = _logsService.Salvar(log);
+                var retorno = _mapper.Map<LogsDTO>(retornLog);
+                return Ok(retorno);
             }
             else
             {
