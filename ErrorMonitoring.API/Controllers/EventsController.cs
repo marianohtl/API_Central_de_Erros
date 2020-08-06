@@ -32,6 +32,8 @@ namespace ErrorMonitoring.API.Controllers
         public ActionResult<IEnumerable<EventsDTO>> GetAll([FromQuery] EventsFilterDTO eventsFiltroDTO) 
        {
 
+            return Ok(Environment.GetEnvironmentVariables());
+
             var eventsFilter = _mapper.Map<EventsFilter>(eventsFiltroDTO);
             var events = _eventsService.Events(eventsFilter);
             if (events != null)
