@@ -30,7 +30,14 @@ namespace ErrorMonitoring.Dominio.Services
         }
         public Events EventById(int ID)
         {
+            try
+            {
                 return _eventsRepository.GetById(ID);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public Events Salvar(Events events)
