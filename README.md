@@ -55,7 +55,6 @@ Neste projeto implementamos um sistema para centralizar registros de erros de ap
 `POST /api/v1/Auth/login` - Realiza login do usuário cadastrado<br/>
 `POST /api/v1/Auth/logout` - Realiza o logout do usuário<br/>
 `POST /api/v1/Auth/forgotPassword` - Envia um codigo para que o usuário possa resetar a senha<br/>
-`POST /api/v1/Auth/resetPassword` -<br/>
 
 - EnvironmentController<br/>
 `GET api/environments` - Retorna todos os ambientes da ErrorMonitoring<br/>
@@ -83,6 +82,8 @@ Neste projeto implementamos um sistema para centralizar registros de erros de ap
 `GET 	api/log/{id}` - Retorna o log do ID<br/>
 `POST 	api/log` - Cadastra um novo log<br/> 
 `PUT 	api/log/{id}` - Atualiza o log do ID<br/>
+`PUT 	api/setFiledErrors/{id}` - Arquiva o log do ID<br/>
+`PUT 	api/setUnarchiveErrors/{id}` - Desarquiva o log do ID<br/>
 `DELETE	api/log/{id}` - Deleta o log do ID<br/>
 
 - ProjectsEnvironments<br/>
@@ -106,3 +107,6 @@ Neste projeto implementamos um sistema para centralizar registros de erros de ap
 - [Thalita Mariano](https://www.linkedin.com/in/thalita-mariano-971b48172/)
 
 ### Agradecimentos: <a name="agradecimentos"></a>
+- Nosso squad;
+- Codenation e equipe;
+- ClearSale e equipe.
