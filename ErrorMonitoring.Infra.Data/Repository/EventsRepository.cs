@@ -42,7 +42,6 @@ namespace ErrorMonitoring.Infra.Data.Repository
                                     .ToList();
                 var levels = ordenacao.Select(y => y.Level).ToList();
                 return qry.OrderBy(x => levels.IndexOf(x.ELevel)).ToList();
-
             }
             return qry;
         }

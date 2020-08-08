@@ -82,7 +82,6 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
                 {
                     archived = _filter.Archived == "true" ? true : false;
                 }
-
                 var queryEnvironment = context.Environments.Where(x => x.EnvName == _filter.Environment).Select(x => x.Id);
                 var projectsEnvironments = context.ProjectsEnvironments.Where(x => queryEnvironment.Contains(x.Environment) && project.Id == x.ProjectNavigation.Id).Select(x => x.Project);
                 var queryLogs = context.Logs.Where(x => projectsEnvironments.Contains(x.Project) && x.Archived == archived).Select(x => x.EventType);
