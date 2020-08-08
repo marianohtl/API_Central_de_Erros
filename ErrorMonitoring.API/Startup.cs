@@ -129,8 +129,6 @@ namespace ErrorMonitoring.API
             
             app.UseRouting();
 
-            app.UseAuthorization();
-
 
             //Autorização Bearer
             app.UseAuthentication();

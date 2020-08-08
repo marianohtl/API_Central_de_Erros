@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using ErrorMonitoring.Dominio.Entidades;
 using ErrorMonitoring.Infra.Data.Contexts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -12,6 +13,7 @@ namespace ErrorMonfitoring.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Authorize]
     public class WeatherForecastController : ControllerBase
     {
 

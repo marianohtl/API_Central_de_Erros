@@ -4,6 +4,7 @@ using AutoMapper;
 using ErrorMonitoring.API.DTOs;
 using ErrorMonitoring.Dominio.Entidades;
 using ErrorMonitoring.Dominio.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,7 @@ namespace ErrorMonitoring.API.Controllers
 {
     [Route("api/Logs")]
     [ApiController]
+    [Authorize]
     public class LogsController : ControllerBase
     {
         private readonly ILogsService _logsService;
