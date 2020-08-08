@@ -28,15 +28,20 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
             WhereByEnvironment();
             WhereByLevel();
             WhereByDescription();
+            WhereByProjects();
             OrderBy();
             OrderByDescending();
             return _queryable.AsEnumerable();
         }
         private void WhereByArchived()
         {
-            if (!string.IsNullOrWhiteSpace(_filter.Archived) && string.IsNullOrWhiteSpace(_filter.Environment))
+            if ( string.IsNullOrWhiteSpace(_filter.Environment))
             {
-                bool archived = _filter.Archived == "true" ? true : false;
+                bool archived = false;
+                if (!string.IsNullOrWhiteSpace(_filter.Archived))
+                {
+                    archived = _filter.Archived == "true" ? true : false;
+                }
                 var queryLogs = context.Logs.Where(x => x.Archived == archived).Select(y => y.Id);
                 _queryable = _queryable.Where(x => queryLogs.Contains(x.Id));
             }
@@ -86,6 +91,24 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
 
         }
 
+        private void WhereByProjects()
+        {
+            Projects project; 
+            bool archived = false;
+
+            if (string.IsNullOrWhiteSpace(_filter.Environment) && !string.IsNullOrWhiteSpace(_filter.Project))
+            {
+                project = context.Projects.Where(x => x.PName == _filter.Project).FirstOrDefault();
+                
+                if (!string.IsNullOrWhiteSpace(_filter.Archived))
+                {
+                    archived = _filter.Archived == "true" ? true : false;
+                }
+                var queryLogs = context.Logs.Where(x => x.Project== project.Id && x.Archived == archived).Select(x => x.EventType);
+                _queryable = _queryable.Where(x => queryLogs.Contains(x.Id));
+            }
+
+        }
 
         private void OrderByDescending()
         {

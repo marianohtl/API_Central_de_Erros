@@ -23,7 +23,7 @@ namespace ErrorMonitoring.Infra.Data.Repository
 
         public IEnumerable<Events> GetBySearch(EventsFilter filter)
         {
-            var qry = new EventsFilterQueryBuilder(context.Events.AsQueryable(), filter, context).Build();
+            var qry = new EventsFilterQueryBuilder(context.Events.Include(x=>x.Logs).AsQueryable(), filter, context).Build();
             return OrderByDescendingFrequency(qry, filter);
 
         }
@@ -40,8 +40,8 @@ namespace ErrorMonitoring.Infra.Data.Repository
                                     })
                                     .OrderByDescending(x => x.Quantidade)
                                     .ToList();
-
-                return qry.OrderBy(x => ordenacao.Select(y => y.Level).IndexOf(x.ELevel)).ToList();
+                var levels = ordenacao.Select(y => y.Level).ToList();
+                return qry.OrderBy(x => levels.IndexOf(x.ELevel)).ToList();
 
             }
             return qry;
@@ -49,7 +49,7 @@ namespace ErrorMonitoring.Infra.Data.Repository
 
         public Events GetById(int Id)
         {
-            return context.Events.Where(x => x.Id == Id).FirstOrDefault();
+            return context.Events.Include(x=>x.Logs).Where(x => x.Id == Id).FirstOrDefault();
         }
 
         public Events Save(Events events)
