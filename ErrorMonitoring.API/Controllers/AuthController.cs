@@ -37,7 +37,7 @@ namespace ErrorMonitoring.API.Controllers
             [HttpGet]
             public async Task<ActionResult> Get()
             {
-                return Ok("Teste autorização Ok!!! ;)");
+                return Ok("#ClearSale  <3");
             }
 
             [HttpPost("cadastrar")]
@@ -85,13 +85,13 @@ namespace ErrorMonitoring.API.Controllers
                 return NotFound(loginUser);
             }
 
-            [HttpPost("logout")]
-            [ValidateAntiForgeryToken]
-            public async Task<IActionResult> Logout()
-            {
-                await _signInManager.SignOutAsync();
-                return Ok();
-            }
+            //[HttpPost("logout")]
+            //[ValidateAntiForgeryToken]
+            //public async Task<IActionResult> Logout()
+            //{
+            //    await _signInManager.SignOutAsync();
+            //    return Ok();
+            //}
 
             
             [HttpPost("forgotPassword")]
