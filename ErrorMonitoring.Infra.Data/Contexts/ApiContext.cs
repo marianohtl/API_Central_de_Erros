@@ -29,16 +29,9 @@ namespace ErrorMonitoring.Infra.Data.Contexts
 
             if (!optionsBuilder.IsConfigured)
             {
-                var env = Environment.GetEnvironmentVariable("ERROR_MONITORING_DB_CONNECTION");
 
-                if (env != default)
-                {
-                    optionsBuilder.UseSqlServer(env);
-                }
-                else
-                {
-                    optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS; Database=ErrorMonitoring; Integrated Security = True");
-                }
+                optionsBuilder.UseSqlServer("Server=tcp:projetocodenation.database.windows.net,1433;Initial Catalog=errormonitoring;Persist Security Info=False;User ID=squad2;Password=jPDt2e^nAUDD;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")
+                //optionsBuilder.UseSqlServer("Server=localhost\\SQLEXPRESS; Database=ErrorMonitoring; Integrated Security = True");
             }
         }
 
