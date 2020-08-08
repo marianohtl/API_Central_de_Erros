@@ -102,6 +102,48 @@ namespace ErrorMonitoring.API.Controllers
             }
         }
 
+        // PUT: api/setFiledErrors/5
+        [HttpPut("ArchivedErrors/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<bool> ArchivedErrors(int id)
+        {
+            var log = _logsService.LogsById(id);
+            if (log != null)
+            {
+                log.Archived = true;
+                var retornLog = _logsService.Atualizar(log);
+                var retorno = _mapper.Map<LogsDTO>(retornLog);
+                return Ok(retorno);
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
+        // PUT: api/setUnarchiveErrors/5
+        [HttpPut("UnarchivedErrors/{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<bool> UnarchivedErrors(int id)
+        {
+            var log = _logsService.LogsById(id);
+            if (log != null)
+            {
+                log.Archived = false;
+                var retornLog = _logsService.Atualizar(log);
+                var retorno = _mapper.Map<LogsDTO>(retornLog);
+                return Ok(retorno);
+            }
+            else
+            {
+                return NoContent();
+            }
+        }
+
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
