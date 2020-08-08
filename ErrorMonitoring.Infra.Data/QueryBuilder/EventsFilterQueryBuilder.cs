@@ -29,6 +29,7 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
             WhereByLevel();
             WhereByDescription();
             WhereByProjects();
+            WhereByOrigin();
             OrderBy();
             OrderByDescending();
             return _queryable.AsEnumerable();
@@ -54,6 +55,13 @@ namespace ErrorMonitoring.Infra.Data.QueryBuilder
             }
         }
 
+        private void WhereByOrigin()
+        {
+            if (!string.IsNullOrWhiteSpace(_filter.Origin))
+            {
+                _queryable = _queryable.Where(x => x.EOrigin == _filter.Origin);
+            }
+        }
         private void WhereByDescription()
         {
             if (!string.IsNullOrWhiteSpace(_filter.Description))
